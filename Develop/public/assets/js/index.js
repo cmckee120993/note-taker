@@ -1,21 +1,3 @@
-// const express = require('express');
-
-// const app = express();
-
-// app.use(express.static('public'));
-// app.use(express.json());
-// app.get(express.urlencoded({extended: true}));
-
-// app.get('/:title', (req, res) => {
-
-// })
-
-// app.post('/');
-
-// app.listen(3001, () => {
-//   console.log('App running at http://localhost:3001/')
-// });
-
 let noteTitle;
 let noteText;
 let saveNoteBtn;
