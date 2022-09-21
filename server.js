@@ -14,10 +14,14 @@ app.get('/notes', (req, res) => {
 });
 
 app.post('/notes', (req, res) => {
-  const notes = require('./db/db.json');
-  const { title, text } = req.body;
+  let notes = require('./db/db.json');
+  let newNote = req.body;
+  // let noteList = JSON.parse(fs.readFile('./db/db.json'));
+  let noteLength = (notes.length).toString();
+  newNote.id = noteLength;
 
-  notes.push({title, text})
+
+  notes.push(newNote)
  
  fs.writeFile('./db/db.json', JSON.stringify(notes, null, 2), (err) => {
   if (err) {
