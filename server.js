@@ -16,7 +16,6 @@ app.get('/notes', (req, res) => {
 app.post('/notes', (req, res) => {
   let notes = require('./db/db.json');
   let newNote = req.body;
-  // let noteList = JSON.parse(fs.readFile('./db/db.json'));
   let noteLength = (notes.length).toString();
   newNote.id = noteLength;
 
