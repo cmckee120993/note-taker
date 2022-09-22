@@ -33,6 +33,27 @@ app.post('/notes', (req, res) => {
  });
 });
 
+function deleteNote(id, notesList) {
+  for(let i=0; 1<notesList.length; i++) {
+    let note = notesList[i];
+    
+    if (note.id == id) {
+    notesList.splice(i, 1);
+    fs.writeFileSync(path.join(__dirname, './db/db.json'), 
+    JSON.stringify(notesList, null, 2));
+    break;
+  };
+};
+};
+
+app.delete('/notes/:id', (req, res) => {
+  const notes = require('./db/db.json');
+  const id = req.params.id;
+
+  deleteNote(id, notes);
+  res.json(true);
+});
+
 app.listen(3001, () => {
   console.log('App running at http://localhost:3001/')
 });
