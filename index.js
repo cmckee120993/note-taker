@@ -1,7 +1,7 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
-
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 app.use(express.static('public'));
@@ -54,6 +54,6 @@ app.delete('/notes/:id', (req, res) => {
   res.json(true);
 });
 
-app.listen(3001, () => {
-  console.log('App running at http://localhost:3001/')
+app.listen(PORT, () => {
+  console.log(`App running at ${PORT}`)
 });
