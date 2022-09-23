@@ -20,7 +20,7 @@ const hide = (elem) => {
 let activeNote = {};
 
 const getNotes = () =>
-  fetch('https://git.heroku.com/clay-mckee-note-taker.git/notes', {
+  fetch('/notes', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ const getNotes = () =>
   });
 
 const saveNote = (note) =>
-  fetch('https://git.heroku.com/clay-mckee-note-taker.git/notes', {
+  fetch('/notes', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ const saveNote = (note) =>
   });
 
 const deleteNote = (id) =>
-  fetch(`https://git.heroku.com/clay-mckee-note-taker.git/notes/${id}`, {
+  fetch(`/notes/${id}`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',
