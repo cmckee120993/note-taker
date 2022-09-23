@@ -22,11 +22,3 @@
  If you have any questions, email me at cmckee120993@gmail.com. 
 
  You can view more of my work at [cmckee120993](https://github.com/cmckee120993).
-
- ## Program in Use
-[![Watch the video](./assets/images/readme-gen-screenshot.png)](https://drive.google.com/file/d/1sIMBOmdo1Dzw_vUq7Vm6vO_takrPy3PF/view)
-
-Click on the screenshot above to be taken to a video recording of this project in action. 
-
- ### Note
- Except for the video of the site being used and this final note, this README was created using the README generator! 
