@@ -16,6 +16,9 @@
  In order to use this repo, navigate to the "note-taker" folder in your terminal and run "node server.js" to start the localhost url. You can then click on the url in the terminal to open the web application. 
  
  ## Screenshots
+[![No Save Button](./public/assets/Images/no-save.png)]
+
+[![Save Button](./public/assets/Images/save.png)]
 
  ## Deployed App
  https://git.heroku.com/clay-mckee-note-taker.git
