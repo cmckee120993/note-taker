@@ -1,7 +1,7 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
-const PORT = process.env.PORT || 20300;
+const PORT = process.env.PORT || '20300';
 const app = express();
 
 // app.use(express.static('public'));
@@ -54,6 +54,8 @@ app.delete('/notes/:id', (req, res) => {
   deleteNote(id, notes);
   res.json(true);
 });
+
+app.set('port', PORT);
 
 app.listen(PORT, () => {
   console.log(`App running at ${PORT}`)
