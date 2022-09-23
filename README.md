@@ -21,7 +21,7 @@
 [![Save Button](./public/assets/Images/save.png)]
 
  ## Deployed App
- https://git.heroku.com/clay-mckee-note-taker.git
+https://clay-mckee-note-taker.herokuapp.com/
 
 ## Questions 
 
