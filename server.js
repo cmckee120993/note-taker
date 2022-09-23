@@ -4,7 +4,8 @@ const path = require('path');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
+app.use('/', serveStatic(path.join(__dirname, '/public')));
 app.use(express.json());
 app.get(express.urlencoded({extended: true}));
 
